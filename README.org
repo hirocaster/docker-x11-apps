@@ -6,12 +6,20 @@ Dockerコンテナ内のGUIアプリがWindows/Macで表示と動作ができる
 
 VcXsrvが動作していること
 
+** macOS
+
+XQuartzが動作していること。
+ネットワーククライアントの接続設定を有効にしていること。(要再起動)
+
+#+begin_src bash
+/usr/X11/bin/xhost + localhost
+#+end_src
+
 ** Uses
 
 #+begin_src bash
-  docker-compose build
-  docker-compose up
+  docker compose build
+  docker compose up
 #+end_src
 
 xeyesが表示されれば正常に動作している。
-
