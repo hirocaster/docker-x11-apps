@@ -1,0 +1,10 @@
+version: '3'
+services:
+  xeyes:
+    build:
+      dockerfile: ./Dockerfile
+    tty: true
+    environment:
+      - DISPLAY=host.docker.internal:0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix

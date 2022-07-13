@@ -1,0 +1,17 @@
+* docker-x11apps
+
+Dockerコンテナ内のGUIアプリがWindows/Macで表示と動作ができることを確認するサンプル
+
+** Windows
+
+VcXsrvが動作していること
+
+** Uses
+
+#+begin_src bash
+  docker-compose build
+  docker-compose up
+#+end_src
+
+xeyesが表示されれば正常に動作している。
+
